@@ -1,0 +1,131 @@
+/* Card */
+.mySignIn{
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    /* overflow-y: scroll; */
+}
+.mySignIn .myCard{
+    min-height: 80vh;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.myCard .cardContent{
+    width: 80%;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 576px){
+    .mySignIn .myCard {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+}
+
+/* Title */
+.myCard .myTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.myTitle .brand{
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+.myTitle .signIn{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* EmailExist */
+.myCard .emailExist{
+    text-align: center;
+}
+.emailExist .emailDetail{
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 5px;
+    align-items: center;
+}
+.emailDetail .image{
+    border: 1px solid #d8d8d8;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 5px;
+}
+.emailDetail .image i{
+    line-height: 23px;
+}
+.emailDetail .emailContent, .emailDetail .iconAngel{
+    font-weight: bold;
+    color: #57595aa8;
+    margin-right: 10px;
+}
+/* Input */
+.myCard .underline{
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+}
+.myCard .inputField{
+    width: 100%;
+    padding: 16px 0;
+}
+.inputField .mdl-textfield{
+    width: 100%;
+}
+.inputField .formButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formButton .forgot{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* social */
+.myCard h6{
+    margin-bottom: 10px;
+}
+.usingSocial .buttonSocial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.usingSocial .mdl-button{
+    color: white;
+    text-transform: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 48%;
+}
+.usingSocial .btnFacebook{
+    background-color: #4267B2;
+}
+.usingSocial .btnTwitter{
+    background-color: #1DA1F2;
+}

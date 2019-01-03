@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Card */
+.mySignIn{
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+.mySignIn .myCard{
+    min-height: 80vh;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.myCard .cardContent{
+    width: 80%;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 576px){
+    .mySignIn .myCard {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+}
+
+/* Title */
+.myCard .myTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.myTitle .brand{
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+
+/* CardAccount */
+.mdlCardModify{
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 15px;
+}
+.cardAccount{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.cardAccount .accountImage{
+    width: 30%;
+    text-align: center;
+}
+.accountImage::after{
+    content: "";
+    width: 1px;
+    height: 4.5rem;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 10px;
+    left: 30%;
+}
+.accountImage i{
+    font-size: 80px;
+}
+.cardAccount .accountDetail{
+    width:  70%;
+    padding: 0 20px;
+}
+.accountDetail .accountName{
+    font-weight: bold;
+    margin: 5px 0 0px 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 21px;
+    height: 21px;
+}
+.accountDetail p{
+    margin-bottom: 5px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 21px;
+    height: 21px;
+}
+.accountDetail span:last-child a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.buttonAccount{
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+}
+/* activities */
+.activities h6{
+    text-align: center;
+    color: #d8d8d8; 
+}
+
+.activities a{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+@media screen and (max-width: 992px){
+    .accountImage::after{
+        left: 33%;
+    }
+}
+@media screen and (max-width: 840px){
+    .accountImage::after{
+        left: 30%;
+    }
+}
+@media screen and (max-width: 480px){
+    .cardAccount{
+        flex-direction: column;
+    }
+    .cardAccount .accountImage{
+        width: 100%;
+        text-align: center;
+    }
+    .accountImage::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #d8d8d8;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+    .accountImage i{
+        font-size: 50px;
+    }
+    .cardAccount .accountDetail{
+        width:  100%;
+        padding: 0 10px;
+    }
+    .accountDetail .accountName{
+        font-weight: bold;
+        margin: 5px 0 0px 0;
+        font-size: 12px;
+    }
+    .accountDetail p{
+        margin-bottom: 5px;
+    }
+    .buttonAccount .btnItem{
+        font-size: 10px;
+        padding: 0 5px;
+    }
+}
+
+
