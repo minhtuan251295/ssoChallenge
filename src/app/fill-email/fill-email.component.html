@@ -1,0 +1,48 @@
+<div class="myTitle">
+  <h1 class="brand">Welcome</h1>
+  <h2 class="signIn">Sign In</h2>
+</div>
+<div class="usingSocial">
+  <h6>Log In with your favorite network</h6>
+  <div class="buttonSocial">
+      <button class="mdl-button mdl-js-button mdl-button--raised btnFacebook">
+          <i class="fa fa-facebook"></i>
+          Connect with Facebook
+      </button>
+      <button class="mdl-button mdl-js-button mdl-button--raised btnTwitter">
+          <i class="fa fa-facebook"></i>
+          Connect with Twitter
+      </button>
+  </div>
+</div>
+
+<div class="inputField">
+  <h6>Or Login In with your email</h6>
+  <form #fillEmail = "ngForm" (ngSubmit)="onFillEmail(fillEmail)">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <label for="email" class="mdl-textfield__label">Email</label>
+          <input type="email" class="mdl-textfield__input" #txtEmail="ngModel"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" ngModel/>
+          <div *ngIf="txtEmail.errors && (txtEmail.touched || txtEmail.dirty)">
+            <div *ngIf="txtEmail.errors.required">
+                <span class="mdl-textfield__error">Please fill your email!</span>
+            </div>
+            <div *ngIf="txtEmail.errors.pattern">
+                <span class="mdl-textfield__error">Enter a valid email!</span>
+            </div>
+          </div>
+          
+      </div>
+      <div class="formButton">
+          <a href="#" class="forgot">Forgot Email?</a>
+          <!-- login -->
+          <button type = "submit" [disabled]="fillEmail.invalid" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+              Next
+          </button>
+      </div>
+  </form>
+</div>
+
+<div class="register">
+  Don't have an account?
+  <a href="" class="btnRegister"> Resigter Now</a>
+</div>

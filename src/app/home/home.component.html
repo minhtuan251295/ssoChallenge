@@ -1,0 +1,33 @@
+<div class="myTitle">
+    <h1 class="brand">Welcome</h1>
+</div>
+<div class="mdl-card mdl-shadow--2dp mdlCardModify">
+    <div class="cardAccount">
+        <div class="accountImage">
+            <i class="material-icons">account_circle</i>
+        </div>
+        <div class="accountDetail">
+            <h6 class="accountName">{{user?.username }}</h6>
+            <p>{{user?.email}}</p>
+            <span>
+                <a href="">Your Profile</a>
+                --
+                <a href="">Privacy</a>
+            </span>
+        </div>
+    </div>
+    <div class="underline"></div>
+    <div class="buttonAccount">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btnItem">
+            Add Account
+        </button>
+        <button (click) = "onSignOut()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btnItem">
+            Sign Out
+        </button>
+    </div>
+</div>
+<div class="activities">
+    <h6>Activities</h6>
+    <p><a href="">Go to Coaching Cloud</a></p>
+    <p><a href="">Create new community</a></p>
+</div>

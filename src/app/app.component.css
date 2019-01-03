@@ -1,0 +1,29 @@
+/* Card */
+.mySignIn{
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    /* overflow-y: scroll; */
+}
+.mySignIn .myCard{
+    min-height: 80vh;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.myCard .cardContent{
+    width: 80%;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 576px){
+    .mySignIn .myCard {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+}

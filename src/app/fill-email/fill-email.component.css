@@ -1,0 +1,77 @@
+/* Title */
+.myTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.myTitle .brand{
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+.myTitle .signIn{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Input */
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+}
+.inputField{
+    width: 100%;
+    padding: 16px 0;
+}
+.inputField .mdl-textfield{
+    width: 100%;
+}
+.inputField .formButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formButton .forgot, .register .btnRegister{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register{
+    margin-top: 15px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* social */
+.inputField h6{
+    margin-bottom: 10px;
+}
+.usingSocial .buttonSocial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.usingSocial .mdl-button{
+    color: white;
+    text-transform: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 48%;
+}
+.usingSocial .btnFacebook{
+    background-color: #4267B2;
+}
+.usingSocial .btnTwitter{
+    background-color: #1DA1F2;
+}
+
+.wrong{
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
